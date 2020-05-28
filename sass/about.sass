@@ -1,0 +1,137 @@
+@import 'responsive'
+
+.svg-about
+	position: absolute
+	width: 0px
+	height: 0px
+
+.about
+
+	&__block
+		position: relative
+
+		&:after,
+		&:before
+			position: absolute
+			z-index: 1
+			left: -1px
+			right: -1px
+			content: ' '
+			width: calc(100% + 2px)
+			height: 350px
+
+		&:after
+			top: -1px
+			background-image: url(../img/about-top.svg)
+			background-size: 100%
+			background-repeat: no-repeat
+			background-position: top
+
+		&:before
+			bottom: -1px
+			background-image: url(../img/about-bottom.svg)
+			background-size: 100%
+			background-repeat: no-repeat
+			background-position: bottom
+
+	&__wrap
+		position: relative
+		padding: 25em 0
+		padding-top: 17em
+		&:after
+			position: absolute
+			z-index: -1
+			content: ' '
+			top: 0px
+			left: 0px
+			width: 100%
+			height: 100%
+			background-image: url(../img/about-bg.jpg)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			filter: grayscale(100%)
+			opacity: 0.1
+
+	&__inner
+		position: relative
+		z-index: 3
+
+	&__item
+		&--content
+			position: absolute
+			top: 0px
+			right: -5%
+			width: 630px
+			+media(lg)
+				right: 0px
+			+media(lgxs)
+				position: static
+				width: 100%
+				margin: 0px
+		&--data
+			width: 490px
+			margin-right: 25px
+			+media(lgxs)
+				width: 100%
+				margin-right: 0px
+
+	&__title
+		font-size: 60px
+		line-height: 1
+		color: #10adf4
+		text-transform: uppercase
+		font-weight: 200
+		padding-bottom: 70px
+		+media(lgsm)
+			font-size: 48px
+		+media(mdx)
+			font-size: 42px
+		+media(sm)
+			font-size: 36px
+
+	&__text
+		p
+			font-size: 16px
+			line-height: 1.9
+			color: #333333
+			padding-bottom: 35px
+
+	&__wrap-bg
+		filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.2))
+
+	&__bg
+		clip-path: url(#my-clip-path)
+		background-color: #10adf4
+		background-size: cover
+		max-width: 635px
+		width: 100%
+		height: 700px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		padding-right: 70px
+		padding-top: 175px
+		+media(sm)
+			max-width: 400px
+			height: auto
+			padding: 130px 0
+			padding-right: 20px
+
+	&__image
+		margin-right: 55px
+		margin-bottom: 25px
+		+media(sm)
+			margin-right: 20px
+			max-width: 50px
+			margin-bottom: 18px
+
+	&__desc
+		font-size: 36px
+		line-height: 1.3
+		color: #ffff
+		text-transform: uppercase
+		font-weight: 900
+		+media(sm)
+			font-size: 21px
+			padding-bottom: 12px

@@ -1,0 +1,28 @@
+.inner {
+	background-color: #F8F7FA;
+	position: relative;
+}
+
+.inner:after {
+	position: absolute;
+	content: ' ';
+	z-index: 1;
+	top: -1px;
+	left: -1px;
+	width: -webkit-calc(100% + 2px);
+	width: calc(100% + 2px);
+	height: 100%;
+	background-image: url(../img/right.svg);
+	background-repeat: no-repeat;
+	-webkit-background-size: auto auto;
+	background-size: auto;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center;
+}
+
+.inner .container {
+	position: relative;
+	z-index: 2;
+}
+

@@ -1,0 +1,139 @@
+.pay {
+	margin-top: 205px;
+}
+
+.pay + footer {
+	margin-top: -185px;
+}
+
+.pay .video__wrap {
+	padding: 6em 0;
+}
+
+.pay__inner {
+	position: relative;
+	top: -370px;
+}
+
+.pay__block {
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+	border-top: 2px solid #75af26;
+	padding: 45px 65px;
+	margin-top: 52px;
+}
+
+.pay__title {
+	font-size: 36px;
+	line-height: 1;
+	color: #75af26;
+	text-transform: uppercase;
+	padding-bottom: 45px;
+	font-weight: normal;
+}
+
+.pay__list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-bottom: 15px;
+}
+
+.pay__list .pay__box:first-child {
+	-webkit-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+}
+
+.pay__list .pay__box:last-child {
+	-webkit-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+}
+
+.pay__box {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #75af26;
+	border: 1px solid #75af26;
+	padding: 7px 20px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	-webkit-transition: 0.3s background-color, 0.3s color, 0.3s border;
+	-o-transition: 0.3s background-color, 0.3s color, 0.3s border;
+	transition: 0.3s background-color, 0.3s color, 0.3s border;
+}
+
+.pay__box:hover:not(.pay__box--active) {
+	background-color: #ffcb08;
+	color: #ffffff;
+	border-color: #ffcb08;
+}
+
+.pay__box--active {
+	color: #fff;
+	background-color: #75af26;
+}
+
+.pay__btn {
+	cursor: pointer;
+	font: inherit;
+	display: block;
+	max-width: 300px;
+	width: 100%;
+	font-size: 18px;
+	line-height: 1.3;
+	color: #ffffff;
+	background-color: #75af26;
+	border: none;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	outline: none;
+	text-transform: uppercase;
+	padding: 10px;
+	margin-top: 32px;
+	margin-bottom: 86px;
+	-webkit-transition: 0.3s background-color;
+	-o-transition: 0.3s background-color;
+	transition: 0.3s background-color;
+}
+
+.pay__btn:hover {
+	background-color: #000000;
+}
+
+.pay__text p:not(:last-child) {
+	padding-bottom: 35px;
+}
+
+.pay__text p {
+	font-size: 16px;
+	line-height: 1.9;
+	color: #333333;
+}
+
+@media screen and (max-width: 960px) {
+
+.pay__block {
+	padding: 45px 20px;
+}
+
+.pay__title {
+	font-size: 31px;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+.pay__title {
+	font-size: 26px;
+}
+
+}
+

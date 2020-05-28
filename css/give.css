@@ -1,0 +1,136 @@
+.give {
+	position: relative;
+	z-index: 3;
+	padding-top: 1em;
+	padding-bottom: 2.8em;
+	background-color: #d2d2d2;
+}
+
+.give__title {
+	position: relative;
+	font-size: 36px;
+	line-height: 1;
+	color: #333333;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 35px;
+	margin-bottom: 32px;
+	font-weight: 400;
+}
+
+.give__title:after {
+	position: absolute;
+	content: ' ';
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: 0 auto;
+	max-width: 141px;
+	width: 100%;
+	height: 2px;
+	background-color: #333333;
+}
+
+.give__inner {
+	position: relative;
+	z-index: 3;
+}
+
+.give__wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 -13px;
+	padding-top: 31px;
+}
+
+.give__item {
+	width: -webkit-calc(100% / 3 - 26px);
+	width: calc(100% / 3 - 26px);
+	margin: 0 13px;
+	margin-bottom: 50px;
+}
+
+.give__subtitle {
+	font-size: 18px;
+	line-height: 1.3;
+	color: #333333;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 5px;
+	padding-bottom: 42px;
+	font-weight: bold;
+}
+
+.give__image {
+	margin-bottom: 45px;
+}
+
+.give__image img {
+	display: block;
+	margin: 0 auto;
+	width: 64px;
+	height: 64px;
+}
+
+.give__content p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333333;
+	text-align: center;
+}
+
+.give__btn {
+	cursor: pointer;
+	display: block;
+	max-width: 300px;
+	width: 100%;
+	font: inherit;
+	font-size: 18px;
+	line-height: 1.3;
+	color: #333333;
+	background-color: #d2d2d2;
+	border: 1px solid #000333;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 7px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	outline: none;
+	-webkit-transition: 0.3s background-color, 0.3s color;
+	-o-transition: 0.3s background-color, 0.3s color;
+	transition: 0.3s background-color, 0.3s color;
+}
+
+.give__btn:hover {
+	background-color: #000000;
+	color: #d2d2d2;
+}
+
+@media screen and (max-width: 960px) {
+
+.give__wrap {
+	margin: 0px;
+}
+
+.give__item {
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.give__subtitle {
+	padding-bottom: 32px;
+}
+
+.give__image {
+	margin-bottom: 35px;
+}
+
+}
+

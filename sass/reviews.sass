@@ -1,0 +1,89 @@
+@import 'responsive'
+
+.reviews
+	padding-top: 70px
+	margin-bottom: 90px
+	&__title
+		font-size: 60px
+		line-height: 1
+		color: #10adf4
+		text-transform: uppercase
+		font-weight: 200
+		padding-bottom: 90px
+
+	&__subtitle
+		font-size: 30px
+		line-height: 1.2
+		color: #333333
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 20px
+		font-weight: 200
+
+	&__position
+		font-size: 16px
+		line-height: 1.2
+		color: #808080
+		text-transform: uppercase
+		text-align: center
+		font-weight: 200
+		padding-bottom: 25px
+
+	&__text
+		p
+			font-size: 16px
+			line-height: 1.5
+			color: #333333
+			text-align: center
+			
+	.owl-carousel
+
+		.owl-nav 
+			display: flex
+			position: absolute
+			top: calc(50% - 20px)
+			width: 100%	
+			.owl-prev,
+			.owl-next
+				position: absolute
+				top: 0px
+				width: 40px
+				height: 40px
+				+media(md)
+					width: 25px	
+				&:after
+					position: absolute
+					content: ' '
+					width: 12px
+					top: 50%
+					height: 12px
+					top: calc(50% - 6px)
+					left: calc(50% - 2px)
+					+media(xs)
+						width: 10px
+						height: 10px
+						top: calc(50% - 5px)
+						left: calc(50% - 5px)
+
+			.owl-prev,
+			.owl-next
+				&:after
+					border-left: 2px solid #b68c5a
+					border-top: 2px solid #b68c5a
+					transform: rotate(-45deg)
+
+			.owl-prev
+				left: -50px
+				+media(md)
+					left: -25px	
+				+media(xs)
+					left: -12px
+				
+
+			.owl-next
+				right: -55px
+				transform: scaleX(-1)
+				+media(md)
+					right: -25px	
+				+media(xs)
+					right: -12px

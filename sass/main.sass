@@ -1,0 +1,49 @@
+@import 'responsive'
+
+body
+	margin: 0
+	padding: 0
+	width: 100%
+	min-height: 100vh
+	overflow-x: hidden
+	color: #333333
+	background-color: #fff
+	font-size: 16px
+	line-height: 1.2
+	font-weight: normal
+	font-style: normal
+	font-family: "Montserrat"
+
+* 
+	box-sizing: border-box
+
+img
+	max-width: 100%
+	height: auto
+
+.container
+	max-width: 1260px
+	width: 100%
+	margin: 0 auto
+	padding: 0 30px
+	+media(xs)
+		padding: 0 15px
+	&--header
+		+media(mdx)
+			padding: 0px
+		+media(xs)
+			padding: 0px
+
+	&--inner
+		max-width: 1900px
+		margin: 0 auto
+		padding: 0px
+		+media(xs)
+			padding: 0px
+
+	&--about
+		max-width: 1305px
+
+	&--block
+		max-width: 1300px
+		padding: 0 50px

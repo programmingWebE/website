@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>FIN2GO</title>
+
+		<link rel="stylesheet" href="fonts/fonts.css">
+	    <link rel="stylesheet" href="css/owl.carousel.min.css">
+	    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	    <link rel="stylesheet" href="css/jquery.formstyler.css">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+
+<svg class="svg-about">
+	<clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
+		<path d="M0.862,0.002 c0.024,-0.004,0.05,-0.001,0.069,0.013 c0.021,0.014,0.032,0.036,0.039,0.057 c0.011,0.035,0.013,0.071,0.013,0.107 c-0.002,0.036,-0.003,0.072,-0.003,0.109 c-0.001,0.018,-0.001,0.035,-0.001,0.053 c0,0.039,0,0.077,0,0.116 c0.001,0.021,0.001,0.043,0.002,0.064 c0.003,0.08,0.007,0.159,0.013,0.239 c0.002,0.023,0.004,0.046,0.005,0.069 c0.001,0.035,0.001,0.072,-0.01,0.106 c-0.006,0.019,-0.017,0.038,-0.035,0.051 c-0.015,0.011,-0.034,0.016,-0.053,0.015 c-0.031,0,-0.061,-0.009,-0.089,-0.02 c-0.032,-0.013,-0.062,-0.03,-0.092,-0.047 c-0.16,-0.09,-0.325,-0.173,-0.494,-0.249 c-0.055,-0.025,-0.114,-0.046,-0.164,-0.08 c-0.023,-0.016,-0.045,-0.034,-0.056,-0.059 c-0.008,-0.017,-0.009,-0.037,-0.001,-0.055 c0.009,-0.022,0.028,-0.04,0.047,-0.056 c0.044,-0.035,0.097,-0.057,0.148,-0.083 C0.362,0.272,0.519,0.185,0.672,0.092 c0.035,-0.021,0.069,-0.044,0.106,-0.062 c0.026,-0.013,0.054,-0.024,0.084,-0.028"></path>
+	</clipPath>
+	
+		<!-- для больших экранов -->
+	<clipPath id="map-clip-path-big" clipPathUnits="objectBoundingBox"><path d="M0 1h1V0C.9888.0032.9774.0059.9661.0091A.982.982 0 00.8802.038C.8737.0402.8672.0429.8607.0455L.8542.0482C.8455.0518.8368.0556.8282.0594L.8266.06a.4701.4701 0 00-.0182.0083L.8015.0715l-.002.001-.0059.0028-.0144.007-.0041.002-.0042.002C.764.0897.7574.0933.7506.0968L.7454.0995.7427.101.721.1127.7183.114.715.1158C.708.1198.7008.1233.6938.1273L.6912.1286.6886.13.6864.131.6673.1412.662.1438.6598.145C.649.1506.638.1563.627.1616L.6168.1667l-.0042.002L.6042.173l-.025.0118A1.3744 1.3744 0 01.5374.203C.531.2061.5243.2083.5177.211L.514.2124A.397.397 0 01.463.226a.5072.5072 0 01-.0648.0092H.3457C.3317.234.3177.232.3036.2305a.502.502 0 01-.073-.0163C.2195.211.2083.2077.1973.2041.1786.198.16.191.1416.184L.1193.175C.11.171.1008.1672.0917.163L.0907.1625.089.1618.08.1578.061.1486l-.002-.001L.0533.145A.5161.5161 0 00.0289.1337C.0231.1312.0174.1285.0115.1265.0077.1251.0039.1235 0 .1224V1z"></path></clipPath>
+
+	<!-- поменьше -->
+	  <clipPath id="map-clip-path" clipPathUnits="objectBoundingBox"><path d="M0 .996h1V0C.9888.0024.9774.0044.9661.0069a1.2207 1.2207 0 00-.0859.0216L.8607.0342l-.0065.002-.026.0085-.0016.0005a.555.555 0 00-.0182.0063L.8015.0538l-.002.0008-.0059.002L.7792.062.7751.0634.7709.065C.764.0674.7574.0702.7506.0728l-.0052.002-.0027.001-.0218.009-.0026.001L.715.0871C.708.0901.7008.0928.6938.0957l-.0026.001-.0026.001-.0022.0009-.0191.0075-.0053.002-.0022.001C.649.1132.638.1175.627.1215L.6168.1254.6126.127.6042.13l-.025.009a1.6306 1.6306 0 01-.0418.0138C.531.155.5243.1568.5177.1587L.514.1597A.5043.5043 0 01.463.17.6659.6659 0 01.3981.177H.3457C.3317.176.3177.1746.3036.1734a.6468.6468 0 01-.073-.0122C.2195.1586.2083.1562.1973.1535.1786.149.16.1437.1416.1384L.1193.1316C.11.1286.1008.1258.0917.1226L.0907.1223.089.1217.08.1187.061.1117.0589.1111.0533.1091A.6066.6066 0 00.0289.1005C.0231.0987.0174.0967.0115.0952.0077.094.0039.0929 0 .092v.904z"></path></clipPath>
+
+	<!-- ещё меньше -->
+	  <clipPath id="map-clip-path-mob" clipPathUnits="objectBoundingBox"><path d="M1 .111C.984.118.967.124.951.13.944.133.936.136.929.139.925.14.92.141.916.143.914.144.912.144.91.145.88.155.85.161.819.167a1.112 1.112 0 01-.114.015H.612C.595.18.577.179.56.177L.537.174A.8424.8424 0 01.408.148C.403.147.397.145.392.144L.349.132C.317.123.285.112.254.101.253.101.252.1.251.1.241.097.232.093.223.09.219.088.215.087.211.085.207.084.203.082.199.081.187.076.174.071.162.066H.16C.16.065.159.065.159.065c-.001 0-.001 0-.001-.001A.0487.0487 0 01.147.06C.145.059.144.059.142.058.13.053.119.048.108.043c-.001 0-.002 0-.003-.001H.104C.101.041.098.039.094.038A.5588.5588 0 00.051.019C.048.018.046.017.043.016.035.013.028.01.02.008.018.007.017.007.015.006.01.004.005.003 0 .001V1C.003 1 .007 1 .01.999.012.998.014.998.017.997.068.985.119.972.169.955.175.953.182.951.189.949.19.948.191.948.192.948.261.925.33.897.397.867.411.861.425.854.439.848A.1999.1999 0 01.46.838C.512.812.564.787.616.763L.655.745C.663.742.67.738.678.735.71.72.743.707.776.693L.78.692C.82.676.86.66.902.65.934.643.967.637 1 .632V.111"></path></clipPath>
+	  
+	  <g id="icon-phone">
+        <path d="M0 7.2C.01 4.33 1.47 1.61 3.93.1c3.18-.16 4.66 3.43 6.94 5.15 2.3 2.14-.76 4.43-2.3 5.84 2.2 4.52 5.94 8.17 10.41 10.46 1.5-1.3 2.67-3.71 5.04-3.05 2 2.11 4.65 3.86 5.98 6.47v1.35c-1.25 1.27-2.37 3.12-4.39 3.15.04.13.11.4.14.53h-.37c.03-.12.11-.36.15-.48-5.69 1.44-11.13-2.19-15.37-5.63C5.61 19.67.75 14.77 0 8.31V7.2z"/>
+    </g>
+
+    <g id="icon-map">
+    	<path d="M.52 12.99C-1.07 6.64 4.45-.2 10.99.05c6.56-.28 11.92 6.51 10.59 12.84C20.11 19.6 14.32 24.05 11.29 30h-.54C7.8 24.05 2.24 19.55.52 12.99m7.99-7.28c-3.63 1.68-4.19 7.19-.89 9.5 3.05 2.61 8.26.62 8.93-3.3 1.17-4.38-4.08-8.4-8.04-6.2z"/>
+    </g>
+
+    <g id="icon-email">
+		<path opacity=".16" d="M0 0h1.95C1.81 1.28 1.16 1.85 0 1.72V0zM27.62 0H30v1.6c-1.12.05-1.92-.49-2.38-1.6zM0 3.92c2.96 4.68 8.37 6.89 12.6 10.22 2.91 2.46 5.87-.84 8.27-2.35C24.03 9.2 28.55 7.65 30 3.5v4.64c-2.81 2.19-5.85 4.06-8.71 6.18-1.94 1.31-3.86 2.96-6.28 3.2-2.43-.27-4.35-1.92-6.29-3.24C5.85 12.16 2.81 10.29 0 8.09V3.92zM0 22.11c1.3.1 1.88.73 1.75 1.89H0v-1.89zM28.03 24c.15-1.16.81-1.76 1.97-1.8V24h-1.97z"/>
+		<path d="M1.95 0h25.67c.46 1.11 1.26 1.65 2.38 1.6v1.9c-1.45 4.15-5.97 5.7-9.13 8.29-2.4 1.51-5.36 4.81-8.27 2.35C8.37 10.81 2.96 8.6 0 3.92v-2.2c1.16.13 1.81-.44 1.95-1.72z"/>
+		<path d="M0 8.09c2.81 2.2 5.85 4.07 8.72 6.19 1.94 1.32 3.86 2.97 6.29 3.24 2.42-.24 4.34-1.89 6.28-3.2 2.86-2.12 5.9-3.99 8.71-6.18V22.2c-1.16.04-1.82.64-1.97 1.8H1.75c.13-1.16-.45-1.79-1.75-1.89V8.09z"/>
+	</g>
+</svg>
+
+<div class="container container--inner">
+
+	
+	<section class="block">
+			<div class="block__holder">
+			
+				<header class="main-header main-header--inner">
+				  <div class="main-header__navigation">
+				    <div class="container container--header">
+				      <div class="main-header__wrap">
+				        <a href="#" class="main-header__logo">
+				          <div class="main-header__image">
+				          	<img src="img/icons/logo.png" alt="">
+				          </div>
+				          <div class="main-header__text">
+				          	<p class="main-header__title">v-buh.com.ua</p>
+				          	<p class="main-header__topic">Бухгалтерские услуги</p>
+				          </div>
+				        </a>
+				        <div class="main-header__user">
+				          <div class="mobile-wrap">
+				            <h3 class="main-header__description">Меню</h3>
+				            <div class="main-nav__toggle">
+				              <span class="line-burger"></span>
+				            </div>
+				          </div>
+				          <ul class="main-header__list">
+				            <li>
+				              <a class="main-header__link" href="">Главная</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Услуги</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Цены</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Акции</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Калькулятор</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Публикации</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link main-header__link--active" href="">Контакты</a>
+				            </li>
+				          </ul>
+				          <div class="main-header__content">
+				            <div class="main-header__button">
+				              <button type="button"></button>
+				            </div>
+				            <form class="main-header__search">
+				              <div class="main-header__search-wrap">
+				                <input class="main-header__input" placeholder="Поиск" type="search" name="s" id="s">
+				                <button class="main-header__search-btn"></button>
+				              </div>
+				            </form>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</header>
+
+				<section class="contacts">
+					<div class="container">
+						<div class="contacts__wrap">
+							<div class="contacts__item contacts__item--content">
+								<div class="contacts__holder">
+									<ul class="contacts__list"> 
+										<li><a href="#">Главная</a></li>
+										<li>Контакты</li>
+									</ul>
+									<h3 class="contacts__title">Контакты</h3>
+									<div class="contacts__text">
+										<p>Компания Бизнес Лайт, как никто другой, понимает, в каком сложном положении оказался бизнес. Наиболее уязвимыми были и остаются физические лица-предприниматели.</p>
+									</div>
+									<p class="contacts__phone">093 720 90 30</p>
+									
+								</div>
+								<div class="contacts__wrapper">
+									<div class="contacts__logo">
+										<img src="img/icons/main-logo.png" alt="">
+									</div>
+									<div class="contacts__elem contacts__elem--top">
+										<img src="img/icons/triangles-info.png" alt="">
+									</div>
+								</div>
+								
+								<div class="contacts__elem contacts__elem--right">
+									<img src="img/icons/tr-connect.png" alt="">
+								</div>
+
+							</div>
+							<div class="contacts__item contacts__item--data">
+								<div class="contacts__col">
+									<div class="contacts__icon">
+										<svg viewBox="0 0 30 30">
+							                <use xlink:href="#icon-phone" />
+							             </svg>
+									</div>
+									<p class="contacts__data contacts__data--phone">38 063 455 45 45</p>
+								</div>
+								<div class="contacts__col">
+									<div class="contacts__icon">
+										<svg viewBox="0 0 30 30">
+							                <use xlink:href="#icon-phone" />
+							             </svg>
+									</div>
+									<p class="contacts__data contacts__data--phone">38 063 455 45 45</p>
+								</div>
+								<div class="contacts__col">
+									<div class="contacts__icon">
+										<svg viewBox="0 0 30 24">
+							                <use xlink:href="#icon-email" />
+							             </svg>
+									</div>
+									<p class="contacts__data main-footer__data--email">info@site.com.ua</p>
+								</div>
+								<div class="contacts__col">
+									<div class="contacts__icon">
+										<svg viewBox="0 0 22 30">
+							                <use xlink:href="#icon-map" />
+							             </svg>
+									</div>
+									<p class="contacts__data contacts__data--address">Соломенская площадь, дом 2, этаж 7, офис 706</p>
+								</div>
+								<div class="contacts__elem contacts__elem--bottom">
+									<img src="img/icons/triangles-info.png" alt="">
+								</div>
+							</div><!--end contacts__item-->
+						</div><!--end contacts__wrap-->
+						<section class="place">
+							<h3 class="place__title">Где мы находимся?</h3>
+								<p class="place__desc">Услуги мирового класса от топ провайдера</p>
+								<div class="place__text">
+									<p>Принесите к столу беспроигрышные стратегии выживания, чтобы обеспечить активное доминирование. В конце дня, в будущем, на взлетно-посадочной полосе появится новый стандарт, который эволюционировал из поколения X, к усовершенствованному облачному решению.</p>
+							</div>
+						</section>
+					</div>
+				</section>
+
+			</div>
+	</section>
+
+	<section class="map">
+		<div class="map__block">
+			<div class="map__inner">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68780316407!2d30.252511957059642!3d50.4016990487754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1590316188286!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				 <svg width="1920" height="353" viewBox="0 0 1920 353" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0)">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M1856.14 156.83C1877.2 163.91 1898.41 170.61 1920 175.89V353H0V352.62C3.6839 351.629 7.43385 350.941 11.182 350.253C13.447 349.838 15.7113 349.422 17.96 348.94C73.45 338.28 128.61 325.83 183.1 310.89C190.377 309.274 197.52 307.18 204.663 305.085C205.785 304.756 206.907 304.427 208.03 304.1C283.48 283.42 357.63 258.29 431.01 231.26C446.162 225.706 461.183 219.793 476.203 213.88C483.873 210.861 491.543 207.841 499.23 204.87C555.42 181.77 611.82 159.16 668.53 137.38C682.514 131.705 696.659 126.458 710.804 121.21C718.943 118.19 727.082 115.171 735.19 112.07C770.6 98.87 806.24 86.29 842.06 74.25C843.399 73.8085 844.737 73.3667 846.076 72.9249C889.705 58.528 933.477 44.0841 978.67 35.42C1038.51 23.69 1099.16 16.02 1160.04 12.62C1163.8 12.5026 1167.56 12.3736 1171.32 12.2446C1192.55 11.5167 1213.81 10.7879 1235.03 12.13C1260.13 12.69 1285.12 15.04 1310.1 17.39C1358.49 20.91 1406.53 28.38 1454 38.27C1466.65 40.7727 1479.22 43.6233 1491.79 46.4737C1501.47 48.6689 1511.15 50.8639 1520.86 52.9C1549.26 59.77 1577.62 66.78 1605.72 74.83C1670.25 92.71 1734.13 112.99 1797.08 135.82C1805.15 138.616 1813.17 141.561 1821.19 144.505C1832.78 148.764 1844.38 153.022 1856.14 156.83Z" fill="white"/>
+						</g>
+						<defs>
+						<clipPath id="clip0" >
+							<rect width="1920" height="353" fill="white" />
+						</clipPath>
+					</defs>
+				</svg>
+
+			</div><!--end map__inner-->
+				
+		</div>
+
+	</section>
+
+	<section class="write">
+		<div class="container">
+			<div class="write__wrap">
+				<h3 class="write__title">Напишите нам!</h3>
+				<p class="write__desc">1000+ клиентов не могут ошибаться</p>
+				<div class="write__text">
+					<p>Получите выгоду от низко висящих фруктов, чтобы определить приблизительную активность добавленной стоимости для бета-теста. Заменить цифровой разрыв с дополнительным. Погружение в нанотехнологии вдоль информационной магистрали замкнет петлю, фокусируясь исключительно на нижней строке.</p>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="connection">
+		<div class="container">
+			<div class="connection__wrap">
+				<div class="connection__item connection__item--content">
+					<div class="connection__big-image">
+						<img src="img/connect.png" alt="">
+					</div>
+					<div class="connection__block">
+						<div class="connection__col connection__col--top">
+							<img src="img/icons/tr-connect.png" alt="">
+						</div>
+						<div class="connection__col connection__col--bottom">
+							<img src="img/icons/tr-connect.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="connection__item connection__item--data">
+					<div class="connection__triangles connection__triangles--right">
+						<img src="img/icons/tr-connect.png" alt="">
+					</div>
+					<form action="" class="connection__form">
+						<div class="connection__box">
+		                   <label for="c_name">Ваше имя</label>
+		                    <input type="text" id="c_name">
+		                </div>
+		                <div class="connection__box">
+		                    <label for="c_phone">Телефон</label>
+		                    <input type="text" id="c_phone">
+		                </div>
+		                <div class="connection__box">
+		                    <label for="c_msg">Сообщение</label>
+		                    <textarea name="" id="c_msg"></textarea>
+		                </div>
+		                <button class="connection__btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="main-footer">	
+		<div class="main-footer__block">
+			<div class="container">
+				<h3 class="main-footer__title">Напишите нам</h3>
+				<div class="main-footer__wrap">
+					<div class="main-footer__item">
+						<form action="" class="main-footer__form">
+							<div class="main-footer__box">
+		                        <label for="f_name">Ваше имя</label>
+		                        <input type="text" id="f_name">
+		                    </div>
+		                    <div class="main-footer__box">
+		                        <label for="f_phone">Телефон</label>
+		                        <input type="text" id="f_phone">
+		                    </div>
+		                    <div class="main-footer__box">
+		                        <label for="f_msg">Сообщение</label>
+		                        <textarea name="" id="f_msg"></textarea>
+		                    </div>
+		                    <button class="main-footer__btn">Отправить</button>
+						</form>
+					</div>
+					<div class="main-footer__item">
+						<div class="main-footer__col">
+							<div class="main-footer__icon">
+								<svg viewBox="0 0 30 30">
+					                <use xlink:href="#icon-phone" />
+					             </svg>
+							</div>
+							<p class="main-footer__data main-footer__data--phone">38 063 455 45 45</p>
+						</div>
+						<div class="main-footer__col">
+							<div class="main-footer__icon">
+								<svg viewBox="0 0 30 30">
+					                <use xlink:href="#icon-phone" />
+					             </svg>
+							</div>
+							<p class="main-footer__data main-footer__data--phone">38 063 455 45 45</p>
+						</div>
+						<div class="main-footer__col">
+							<div class="main-footer__icon">
+								<svg viewBox="0 0 30 24">
+					                <use xlink:href="#icon-email" />
+					             </svg>
+							</div>
+							<p class="main-footer__data main-footer__data--email">info@site.com.ua</p>
+						</div>
+						<div class="main-footer__col">
+							<div class="main-footer__icon">
+								<svg viewBox="0 0 22 30">
+					                <use xlink:href="#icon-map" />
+					             </svg>
+							</div>
+							<p class="main-footer__data main-footer__data--address">Соломенская площадь, дом 2, этаж 7, офис 706</p>
+						</div>
+					</div>
+					<div class="main-footer__item">
+						<div class="main-footer__inner">
+							<div class="main-footer__logo">
+								<img src="img/icons/footer-logo.png" alt="">
+							</div>
+							<p class="main-footer__content">Ваш бухгалтер</p>
+						</div>
+						<div class="main-footer__desc">
+							<p>Для получения дополнительной информации, вы можете связаться с нами любым удобным для вас способом. Мы работаем с 09.00 до 18.00 с понедельника по пятницу.</p>
+						</div>
+					</div>
+				</div><!--end main-footer__wrap-->
+				<div class="main-footer__info">
+					<p>© Copyright 2019-2020 FIN-SERVICE. All rights reserved. Any materials, files and services contained on this site may be reproduced in any form, by any means, in whole or in part, without the prior written consent of FIN-SERVIS LLC. the site is required. Translation, alteration (modification), any modification of the materials of the site, as well as any other actions, including deletion, modification to inconspicuous information and copyright and copyright holders are not allowed</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+	</body>
+</html>

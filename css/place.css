@@ -1,0 +1,37 @@
+.place {
+	max-width: 780px;
+	padding-top: 185px;
+}
+
+.place__title {
+	font-size: 48px;
+	line-height: 1;
+	color: #10adf4;
+	text-transform: uppercase;
+	font-weight: 200;
+	padding-bottom: 30px;
+}
+
+.place__desc {
+	font-size: 24px;
+	line-height: 1.25;
+	color: #808080;
+	text-transform: uppercase;
+	font-weight: 200;
+	padding-bottom: 25px;
+}
+
+.place__text p {
+	font-size: 16px;
+	line-height: 1.8;
+	color: #333333;
+}
+
+@media screen and (max-width: 1050px) {
+
+.place__title {
+	font-size: 42px;
+}
+
+}
+

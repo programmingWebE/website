@@ -1,0 +1,132 @@
+.reviews {
+	padding-top: 70px;
+	margin-bottom: 90px;
+}
+
+.reviews__title {
+	font-size: 60px;
+	line-height: 1;
+	color: #10adf4;
+	text-transform: uppercase;
+	font-weight: 200;
+	padding-bottom: 90px;
+}
+
+.reviews__subtitle {
+	font-size: 30px;
+	line-height: 1.2;
+	color: #333333;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 20px;
+	font-weight: 200;
+}
+
+.reviews__position {
+	font-size: 16px;
+	line-height: 1.2;
+	color: #808080;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 200;
+	padding-bottom: 25px;
+}
+
+.reviews__text p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333333;
+	text-align: center;
+}
+
+.reviews .owl-carousel .owl-nav {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	top: -webkit-calc(50% - 20px);
+	top: calc(50% - 20px);
+	width: 100%;
+}
+
+.reviews .owl-carousel .owl-nav .owl-prev,
+.reviews .owl-carousel .owl-nav .owl-next {
+	position: absolute;
+	top: 0px;
+	width: 40px;
+	height: 40px;
+}
+
+.reviews .owl-carousel .owl-nav .owl-prev:after,
+.reviews .owl-carousel .owl-nav .owl-next:after {
+	position: absolute;
+	content: ' ';
+	width: 12px;
+	top: 50%;
+	height: 12px;
+	top: -webkit-calc(50% - 6px);
+	top: calc(50% - 6px);
+	left: -webkit-calc(50% - 2px);
+	left: calc(50% - 2px);
+}
+
+.reviews .owl-carousel .owl-nav .owl-prev:after,
+.reviews .owl-carousel .owl-nav .owl-next:after {
+	border-left: 2px solid #b68c5a;
+	border-top: 2px solid #b68c5a;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.reviews .owl-carousel .owl-nav .owl-prev {
+	left: -50px;
+}
+
+.reviews .owl-carousel .owl-nav .owl-next {
+	right: -55px;
+	-webkit-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+@media screen and (max-width: 960px) {
+
+.reviews .owl-carousel .owl-nav .owl-prev,
+.reviews .owl-carousel .owl-nav .owl-next {
+	width: 25px;
+}
+
+.reviews .owl-carousel .owl-nav .owl-prev {
+	left: -25px;
+}
+
+.reviews .owl-carousel .owl-nav .owl-next {
+	right: -25px;
+}
+
+}
+
+@media screen and (max-width: 560px) {
+
+.reviews .owl-carousel .owl-nav .owl-prev:after,
+.reviews .owl-carousel .owl-nav .owl-next:after {
+	width: 10px;
+	height: 10px;
+	top: -webkit-calc(50% - 5px);
+	top: calc(50% - 5px);
+	left: -webkit-calc(50% - 5px);
+	left: calc(50% - 5px);
+}
+
+.reviews .owl-carousel .owl-nav .owl-prev {
+	left: -12px;
+}
+
+.reviews .owl-carousel .owl-nav .owl-next {
+	right: -12px;
+}
+
+}
+

@@ -1,0 +1,27 @@
+.request__holder {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding-top: 10px;
+}
+
+.request__holder .block__box:first-child {
+	padding-right: 50px;
+	border-right: 1px solid red;
+}
+
+.request__holder .block__box:last-child {
+	padding-left: 50px;
+}
+
+.request__box {
+	padding-top: 25px;
+}
+
+.request__box p {
+	font-size: 16px;
+	line-height: 1.9;
+	color: #333333;
+}
+

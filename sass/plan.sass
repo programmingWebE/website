@@ -1,0 +1,191 @@
+@import 'responsive'
+
+.plan
+	position: relative
+	z-index: 5
+	margin-top: 18em
+	margin-bottom: 5px
+	&__wrap
+		display: flex
+
+	&__item
+		display: block
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+		border: 2px solid transparent
+		border-radius: 20px
+		padding: 35px
+		transition: 0.3s border
+		+media(md)
+			padding: 30px 20px
+		&:hover
+			border: 2px solid #10adf4
+
+	&__list
+		border-top: 1px solid rgba(184, 219, 241, 0.5)
+		margin-top: 25px
+		
+	&__box
+		font-size: 16px
+		line-height: 1.5
+		color: #333333
+		border-bottom: 1px solid rgba(184, 219, 241, 0.5)
+		text-transform: uppercase
+		padding: 11px 0
+
+	&__title
+		font-size: 60px
+		line-height: 1
+		color: #b68c5a
+		text-transform: uppercase
+		padding-left: 20px
+		padding-bottom: 45px
+		font-weight: 200
+		+media(md)
+			font-size: 40px
+		+media(sm)
+			font-size: 35px
+		
+	&__subtitle
+		font-size: 30px
+		line-height: 1
+		color: #b68c5a
+		text-transform: uppercase
+		padding-bottom: 15px
+
+	&__best
+		font-size: 16px
+		line-height: 1.2
+		color: #b68c5a
+		text-transform: uppercase
+		font-weight: 200
+
+	&__inner
+		display: flex
+		align-items: flex-end
+		justify-content: flex-end
+		padding-top: 36px
+
+	&__price
+		max-width: 160px
+		font-size: 48px
+		line-height: 1
+		color: #b68c5a
+		text-align: center
+		
+		margin-right: 60px
+		font-weight: 200
+		span
+			display: block
+			font-size: 14px
+			line-height: 1.7
+			padding-top: 9px
+			text-transform: uppercase
+
+	&__btn
+		cursor: pointer
+		display: block
+		background-color: #fff
+		border: none
+		outline: none
+		padding: 0px
+		width: 30px
+		height: 30px
+		margin-bottom: 15px
+		position: relative
+		&:hover
+
+			&:after
+				background-color: #10adf4
+
+			&:before
+				border-color: #10adf4
+
+		&:after
+			content: ''
+			position: absolute
+			top: calc(50% - 1px)
+			right: 0
+			width: 27px
+			height: 2px
+			background-color: #b68c5a
+			transition: 0.3s background-color
+
+		&:before
+			content: ''
+			position: absolute
+			top: calc(50% - 7px)
+			right: 1px
+			width: 14px
+			height: 14px
+			border-top: 2px solid #b68c5a
+			border-right: 2px solid #b68c5a
+			transform: rotate(45deg)
+			transition: 0.3s border-color
+
+	&__holder
+		position: relative
+
+	&__triangles
+		position: absolute
+		top: -40px
+		right: 5%
+		transform: rotate(75deg)
+		+media(smx)
+			top: -90px
+	
+	.owl-carousel
+		.owl-item
+			padding: 20px
+
+		.owl-stage
+			display: flex
+			align-items: flex-end
+
+		.owl-nav 
+			display: flex
+			position: absolute
+			top: calc(50% - 20px)
+			width: 100%	
+			.owl-prev,
+			.owl-next
+				position: absolute
+				top: 0px
+				width: 40px
+				height: 40px
+				+media(md)
+					width: 25px	
+				&:after
+					position: absolute
+					content: ' '
+					width: 12px
+					top: 50%
+					height: 12px
+					top: calc(50% - 6px)
+					left: calc(50% - 2px)
+					+media(xs)
+						width: 10px
+						height: 10px
+						top: calc(50% - 5px)
+						left: calc(50% - 5px)
+
+			.owl-prev,
+			.owl-next
+				&:after
+					border-left: 2px solid #b68c5a
+					border-top: 2px solid #b68c5a
+					transform: rotate(-45deg)
+
+			.owl-prev
+				left: -28px
+				+media(md)
+					left: -12px	
+				
+
+			.owl-next
+				right: -28px
+				transform: scaleX(-1)
+				+media(md)
+					right: -12px	
+
+
+	

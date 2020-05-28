@@ -1,0 +1,47 @@
+.write {
+	margin-bottom: 40px;
+	position: relative;
+	padding-top: 5em;
+	z-index: 6;
+	height: 100%;
+}
+
+.write + section {
+	margin-top: -260px;
+}
+
+.write__wrap {
+	position: relative;
+	top: -260px;
+	z-index: 4;
+	max-width: 780px;
+	width: 100%;
+	margin-left: auto;
+}
+
+.write__title {
+	font-size: 48px;
+	line-height: 1;
+	color: #10adf4;
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: 200;
+	padding-bottom: 30px;
+}
+
+.write__desc {
+	font-size: 24px;
+	line-height: 1.25;
+	color: #808080;
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: 200;
+	padding-bottom: 25px;
+}
+
+.write__text p {
+	font-size: 16px;
+	line-height: 1.8;
+	color: #333333;
+}
+
